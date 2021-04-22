@@ -18,18 +18,9 @@ class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
   final String title;
-  final FlutterBlue flutterBlue = FlutterBlue.instance;
 
   @override
   _MyHomePageState createState() => _MyHomePageState();
-
-  _addDeviceTolist(final BluetoothDevice device) {
-    if (!widget.devicesList.contains(device)) {
-      setState(() {
-        widget.devicesList.add(device);
-      });
-    }
-  }
 }
 
 class _MyHomePageState extends State<MyHomePage> {
